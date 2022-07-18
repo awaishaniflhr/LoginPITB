@@ -1,6 +1,5 @@
 package com.example.loginpitb;
 
-import android.widget.EditText;
 
 public class ApiRequest {
     String  Username;

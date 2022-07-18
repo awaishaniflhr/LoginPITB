@@ -60,12 +60,11 @@
             android:layout_marginEnd="@dimen/_20sdp"
             android:hint="@string/enter_your_username"
             android:inputType="text"
-            android:paddingStart="@dimen/_20sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
             android:paddingBottom="@dimen/_10sdp"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColorHint="#808080"
             android:textSize="@dimen/_14ssp"/>
 
         <TextView
@@ -90,12 +89,11 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:maxLength="20"
-            android:paddingStart="@dimen/_20sdp"
             android:paddingTop="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
             android:paddingBottom="@dimen/_10sdp"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColorHint="#808080"
             android:textSize="@dimen/_14ssp"
             android:textStyle="normal" />
 
