@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import okhttp3.Headers;
 import retrofit2.Call;
@@ -36,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             ApiRequest apiRequest = new ApiRequest(username, password);
             login(apiRequest);
         });
+
     }
 
     private void login(ApiRequest apiRequest) {
@@ -43,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<LoginApiResponse>() {
             @Override
             public void onResponse(Call<LoginApiResponse> call, Response<LoginApiResponse> response) {
-                LoginApiResponse myheroList  = response.body();
+                LoginApiResponse details  = response.body();
                 Headers data  = response.headers();
                 Toast.makeText(MainActivity.this, ""+ response.code(), Toast.LENGTH_SHORT).show();
             }

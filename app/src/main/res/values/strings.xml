@@ -6,4 +6,6 @@
     <string name="enter_your_username">Enter Your Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="here_your_details">Here Your Details</string>
 </resources>

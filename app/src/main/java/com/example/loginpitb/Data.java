@@ -8,7 +8,6 @@ public class Data {
     public String user_name;
     public String password;
     public String token;
-    public Date expiry;
 
     public int getUser_Id() {
         return user_Id;
@@ -28,10 +27,6 @@ public class Data {
 
     public String getToken() {
         return token;
-    }
-
-    public Date getExpiry() {
-        return expiry;
     }
 
     public void setUser_Id(int user_Id) {
@@ -54,7 +49,4 @@ public class Data {
         this.token = token;
     }
 
-    public void setExpiry(Date expiry) {
-        this.expiry = expiry;
-    }
 }
