@@ -1,6 +1,5 @@
 package com.example.loginpitb;
 
-
 public class ApiRequest {
     String  Username;
     String  Password;

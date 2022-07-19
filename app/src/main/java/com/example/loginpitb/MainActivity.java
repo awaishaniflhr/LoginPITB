@@ -2,14 +2,12 @@ package com.example.loginpitb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import okhttp3.Headers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -37,10 +35,6 @@ public class MainActivity extends AppCompatActivity {
             String password = Password.getText().toString();
             ApiRequest apiRequest = new ApiRequest(username, password);
             login(apiRequest);
-
-
-
-
         });
     }
 
@@ -50,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<LoginApiResponse> call, Response<LoginApiResponse> response) {
                 LoginApiResponse myheroList  = response.body();
-                Toast.makeText(MainActivity.this, ""+ myheroList.data.getToken(), Toast.LENGTH_SHORT).show();
+                Headers data  = response.headers();
+                Toast.makeText(MainActivity.this, ""+ response.code(), Toast.LENGTH_SHORT).show();
             }
 
             @Override

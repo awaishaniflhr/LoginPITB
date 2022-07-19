@@ -2,11 +2,8 @@ package com.example.loginpitb;
 
 
 import org.json.JSONObject;
-
 import retrofit2.Call;
 import retrofit2.http.Body;
-
-import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
@@ -15,9 +12,10 @@ public interface Interface {
     Call<JSONObject> LoginApiResponse();
 
     @POST("Login")
-    Call<LoginApiResponse> getlogin(@Body ApiRequest apiRequest) ;
-
-
+    Call<LoginApiResponse> getlogin(@Body ApiRequest apiRequest);
+    @POST("token")
+    @Headers("Content-Type")
+    Call <Data>createLoginRequest(@Body Data loginRequest);
 
 }
 
