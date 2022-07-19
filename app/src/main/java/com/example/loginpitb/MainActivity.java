@@ -2,7 +2,9 @@ package com.example.loginpitb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Login;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.et_login_password);
         Login = (Button) findViewById(R.id.btn_login);
 
+
+
         Login.setOnClickListener(view -> {
             Toast.makeText(getApplicationContext(), "working", Toast.LENGTH_LONG).show();
             new ApiRequest("Username","Password");
@@ -39,8 +44,16 @@ public class MainActivity extends AppCompatActivity {
             String password = Password.getText().toString();
             ApiRequest apiRequest = new ApiRequest(username, password);
             login(apiRequest);
+
+            startActivity(new Intent(getApplicationContext(), Main2Activity.class));
         });
 
+
+    }
+
+
+    private String loadJSONFromAsset() {
+        return null;
     }
 
     private void login(ApiRequest apiRequest) {
@@ -58,5 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "An error has occured", Toast.LENGTH_LONG).show();
             }
         });
+
     }
+
+
 }
