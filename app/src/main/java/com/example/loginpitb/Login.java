@@ -4,21 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import okhttp3.Headers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     private EditText Username;
     private EditText Password;
@@ -29,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         Username = (EditText) findViewById(R.id.et_login_username);
         Password = (EditText) findViewById(R.id.et_login_password);
@@ -45,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
             ApiRequest apiRequest = new ApiRequest(username, password);
             login(apiRequest);
 
-            startActivity(new Intent(getApplicationContext(), Main2Activity.class));
+            Intent intent = new Intent(getApplicationContext(), Response.class);
+            startActivity(intent);
+
         });
 
 
@@ -63,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<LoginApiResponse> call, Response<LoginApiResponse> response) {
                 LoginApiResponse details  = response.body();
                 Headers data  = response.headers();
-                Toast.makeText(MainActivity.this, ""+ response.code(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(com.example.loginpitb.Login.this, ""+ response.code(), Toast.LENGTH_SHORT).show();
             }
 
             @Override

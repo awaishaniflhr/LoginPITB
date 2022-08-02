@@ -16,13 +16,16 @@
         android:theme="@style/Theme.LoginPITB"
         tools:targetApi="31">
         <activity
-            android:name=".Main2Activity"
+            android:name=".Premises"
             android:exported="false" />
+        <activity
+            android:name=".Main2Activity"
+            android:exported="true" />
         <activity
             android:name=".ResponseActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

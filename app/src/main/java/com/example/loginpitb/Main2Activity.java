@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         // get the reference of TextView's
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         // get the reference of TextView's
         username = (TextView) findViewById(R.id.tv_login_username);
         password = (TextView) findViewById(R.id.tv_login_password);

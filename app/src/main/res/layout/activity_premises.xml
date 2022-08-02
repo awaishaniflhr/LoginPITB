@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Premises"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_header_ll"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_weight="0.1"
+            android:id="@+id/header_iv_arrow_left"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/ic_more"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Premises"
+            android:textAlignment="center"
+            android:id="@+id/header_tv_title_gray"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/gray"/>
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_weight=".1"
+            android:backgroundTint="@color/gray"
+            android:id="@+id/header_iv_more_vertical_menu"
+            android:background="@drawable/nav_drop_menu"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/premises_info"
+        android:layout_below="@+id/activity_header_ll"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/premises_rounded_layout"
+        android:layout_marginTop="@dimen/_17sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/premises_detail"
+            android:weightSum="6"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:background="@drawable/ic_animal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum"
+                    android:textAlignment="center"
+                    android:id="@+id/premises_title"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/gray"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Code"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_code_text"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1254689"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_code"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MRN"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_mrn_text"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8523697"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_mrn"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textAlignment="center"
+                    android:id="@+id/premises_status"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/green_active"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keepers"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_Keepers_text"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06"
+                        android:textAlignment="center"
+                        android:id="@+id/Keepers_code"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Animals"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_Animals_text"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="172"
+                        android:textAlignment="center"
+                        android:id="@+id/premises_Animals"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:id="@+id/premises_address1"
+            android:weightSum="10"
+            android:layout_below="@+id/premises_detail"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/ic_pin"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="142 St Lower Kachura"
+                android:layout_weight="5"
+                android:id="@+id/premises_address"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/gray"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/ic_call"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="923331112233"
+                android:layout_weight="4"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--    ViewPager Section Start here-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/premises_info"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <!--    ViewPager Section Ends here-->
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/premises_info">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--    Footer Start here-->
+
+    <LinearLayout
+        android:id="@+id/Premises_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_19sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Home"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_19sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/duplicate"
+                    android:backgroundTint="@color/footer_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Register"
+                    android:textColor="@color/footer_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_19sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/notes"
+                    android:backgroundTint="@color/footer_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@Home"
+                    android:textColor="@color/footer_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_19sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_setting"
+                    android:backgroundTint="@color/footer_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Settings"
+                    android:textColor="@color/footer_gray"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--    Footer Ends here-->
+
+
+</RelativeLayout>
