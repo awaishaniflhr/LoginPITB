@@ -11,4 +11,7 @@
     <color name="green_active">#7AD854</color>
     <color name="footer_gray">#B9BCBE</color>
     <color name="light_blue">#1DAEFF</color>
+    <color name="dark_gray">#5B5B5B</color>
+    <color name="tab_gray">#B0B0B0</color>
+    <color name="Selected_tab_blue">#2D6C98</color>
 </resources>

@@ -235,7 +235,7 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/premises_info"
+        android:layout_below="@+id/appbar"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     <!--    ViewPager Section Ends here-->
 
@@ -243,13 +243,15 @@
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_below="@+id/premises_info">
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tab_layout"
                 android:layout_gravity="bottom"
+                app:tabTextColor="@color/tab_gray"
                 android:layout_width="match_parent"
+                app:tabSelectedTextColor="@color/Selected_tab_blue"
+                app:tabIndicatorColor="@color/Selected_tab_blue"
                 android:layout_height="match_parent"
                 app:tabGravity="fill"
                 app:tabMode="fixed" />
@@ -259,139 +261,139 @@
 
     <!--    Footer Start here-->
 
-    <LinearLayout
-        android:id="@+id/Premises_footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:weightSum="4">
+<!--  <LinearLayout-->
+<!--        android:id="@+id/Premises_footer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:weightSum="4">-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="@dimen/_19sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/home" />
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_19sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/home" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Home"
-                    android:textColor="@color/light_blue"
-                    android:textSize="@dimen/_12ssp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="@dimen/_19sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/duplicate"
-                    android:backgroundTint="@color/footer_gray" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Register"
-                    android:textColor="@color/footer_gray"
-                    android:textSize="@dimen/_12ssp" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp"-->
+<!--                    android:text="Home"-->
+<!--                    android:textColor="@color/light_blue"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--            </LinearLayout>-->
 
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="@dimen/_19sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/notes"
-                    android:backgroundTint="@color/footer_gray" />
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_19sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/duplicate"-->
+<!--                    android:backgroundTint="@color/footer_gray" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:text="@Home"
-                    android:textColor="@color/footer_gray"
-                    android:textSize="@dimen/_12ssp" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="@dimen/_19sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_setting"
-                    android:backgroundTint="@color/footer_gray" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Settings"
-                    android:textColor="@color/footer_gray"
-                    android:textSize="@dimen/_12ssp" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp"-->
+<!--                    android:text="Register"-->
+<!--                    android:textColor="@color/footer_gray"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--            </LinearLayout>-->
 
 
-        </LinearLayout>
-    </LinearLayout>
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_19sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/notes"-->
+<!--                    android:backgroundTint="@color/footer_gray" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp"-->
+<!--                    android:text="Home"-->
+<!--                    android:textColor="@color/footer_gray"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_19sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/ic_setting"-->
+<!--                    android:backgroundTint="@color/footer_gray" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp"-->
+<!--                    android:text="Settings"-->
+<!--                    android:textColor="@color/footer_gray"-->
+<!--                    android:textSize="@dimen/_12ssp" />-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
     <!--    Footer Ends here-->
 
 

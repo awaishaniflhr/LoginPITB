@@ -2,7 +2,7 @@ package com.example.loginpitb;
 
 import java.util.ArrayList;
 
-public class POJO {
+public class Pojo {
 
 public class Auth{
     public String type;

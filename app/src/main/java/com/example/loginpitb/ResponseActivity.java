@@ -29,8 +29,11 @@ public class ResponseActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_response);
 
+        Next = (Button) findViewById(R.id.btn_next);
+
         // get the reference of TextView's
         setContentView(R.layout.activity_response);
+
         // get the reference of TextView's
         username = (TextView) findViewById(R.id.tv_response_username);
         password = (TextView) findViewById(R.id.tv_response_password);

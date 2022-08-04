@@ -43,4 +43,6 @@ dependencies {
     //    Sdp and ssp library
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    //      Sugar ORM
+    implementation 'com.github.satyan:sugar:1.5'
 }

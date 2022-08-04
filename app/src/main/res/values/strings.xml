@@ -10,4 +10,11 @@
     <string name="here_your_details">Here Your Details</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sr_no">Sr no:</string>
+    <string name="_0045">0045</string>
+    <string name="_12_12_2021">12-12-2021</string>
+    <string name="lorem_ipsum">Lorem Ipsum:</string>
+    <string name="_46899">46899</string>
+    <string name="assigned">Assigned</string>
+    <string name="next">next</string>
 </resources>
