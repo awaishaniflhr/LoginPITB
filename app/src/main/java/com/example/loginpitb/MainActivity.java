@@ -5,14 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import okhttp3.Headers;
 import retrofit2.Call;
@@ -24,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText Username;
     private EditText Password;
     private Button Login;
-
 
 
     @Override
@@ -43,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             new ApiRequest("Username","Password");
             String username = Username.getText().toString();
             String password = Password.getText().toString();
+
             ApiRequest apiRequest = new ApiRequest(username, password);
             login(apiRequest);
 
@@ -81,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         // write all the data entered by the user in SharedPreference and apply
         myEdit.putString("username", Username.getText().toString());
-        myEdit.putInt("password", Integer.parseInt(Password.getText().toString()));
+        myEdit.putString("password", Password.getText().toString());
         myEdit.apply();
     }
 

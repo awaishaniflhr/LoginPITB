@@ -8,6 +8,24 @@ public class Data {
     public String user_name;
     public String password;
     public String token;
+    public String total;
+    public String list;
+
+    public String getTotal() {
+        return total;
+    }
+
+    public void setTotal(String total) {
+        this.total = total;
+    }
+
+    public String getList() {
+        return list;
+    }
+
+    public void setList(String list) {
+        this.list = list;
+    }
 
     public int getUser_Id() {
         return user_Id;

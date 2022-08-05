@@ -1,41 +1,23 @@
 package com.example.loginpitb;
 
 public class LoginApiResponse {
-    public Data data;
-    public int code;
-    public String message;
-    public boolean success;
+    public String total;
+    public int list;
 
-    public Data getData() {
-        return data;
+    public String getTotal() {
+        return total;
     }
 
-    public int getCode() {
-        return code;
+    public void setTotal(String total) {
+        this.total = total;
     }
 
-    public String getMessage() {
-        return message;
+    public int getList() {
+        return list;
     }
 
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public void setData(Data data) {
-        this.data = data;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
+    public void setList(int list) {
+        this.list = list;
     }
 }
 

@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPITB"
         tools:targetApi="31">
+
         <meta-data
             android:name="DATABASE"
             android:value="notes.db" />
@@ -27,6 +28,7 @@
         <meta-data
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.grafixartist.noteapp" />
+
         <activity
             android:name=".Premises"
             android:exported="false" />
